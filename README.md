@@ -1,10 +1,11 @@
-# THIS IS A FORK...
-...of an unmaintained cordova plugin with unmerged pull request
+# THIS IS A FORKED REPO
+- Added URL SCHEME Intents to plugin.xml, so that it appends to the Android's Manifest file
+- Unmaintained cordova plugin with unmerged pull request
 https://github.com/nordnet/cordova-universal-links-plugin/pull/135
 
 ### Installation
 ```sh
-cordova plugin add cordova-universal-links-plugin-fixed --save
+cordova plugin add peerlyst-cordova-universal-links-plugin --save
 ```
 
 # Cordova Universal Links Plugin
@@ -58,7 +59,7 @@ It is important not only to redirect users to your app from the web, but also pr
 This requires cordova 5.0+ (current stable 1.2.1)
 
 ```sh
-cordova plugin add cordova-universal-links-plugin
+cordova plugin add peerlyst-cordova-universal-links-plugin
 ```
 
 It is also possible to install via repo url directly (**unstable**)
@@ -379,7 +380,7 @@ Now it's time for some examples. In here we are gonna use Android, because it is
 2. Add UL plugin:
 
   ```sh
-  cordova plugin add cordova-universal-links-plugin
+  cordova plugin add peerlyst-cordova-universal-links-plugin
   ```
 
 3. Add `<universal-links>` preference into `config.xml`:
@@ -647,7 +648,7 @@ Let's create new application to play with:
 2. Add UL plugin:
 
   ```sh
-  cordova plugin add cordova-universal-links-plugin
+  cordova plugin add peerlyst-cordova-universal-links-plugin
   ```
 
 3. Add `<universal-links>` preference into `config.xml` (`TestAndroidApp/config.xml`):
@@ -839,7 +840,7 @@ Step-by-step guide:
   cordova create TestProject com.example.ul TestProject
   cd ./TestProject
   cordova platform add ios
-  cordova plugin add cordova-universal-links-plugin
+  cordova plugin add peerlyst-cordova-universal-links-plugin
   ```
 
 6. Add `bnc.lt` and your other hosts into `config.xml`:

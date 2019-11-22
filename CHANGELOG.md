@@ -1,5 +1,11 @@
 # Change Log
 
+## 1.2.2 (2019-11-22)
+
+**Enhancements:**
+
+- Added URL SCHEME Intents to plugin.xml, so that it appends to the Android's Manifest file
+
 ## 1.2.1 (2016-10-23)
 
 **Bug fixes:**
