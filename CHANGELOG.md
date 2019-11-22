@@ -1,4 +1,12 @@
 # Change Log
+## 1.2.3 (2019-11-22)
+
+**Enhancements:**
+
+- Parameterized android intents
+  - APP_DOMAIN_1=www.peerlyst.com
+  - APP_DOMAIN_2=peerlyst.com
+  - URL_SCHEME=peerlyst
 
 ## 1.2.2 (2019-11-22)
 
