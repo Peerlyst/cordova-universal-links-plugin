@@ -27,6 +27,11 @@
   <hook src="hooks/afterPrepareHook.js" type="after_prepare"/>
   <hook src="hooks/beforePluginInstallHook.js" type="before_plugin_install" />
 
+<!-- Params -->
+  <preference name="APP_DOMAIN_1" default=" " />
+  <preference name="APP_DOMAIN_2" default=" " />
+  <preference name="URL_SCHEME" default=" " />
+
   <platform name="ios">
     <hook src="hooks/iosBeforePrepareHook.js" type="before_prepare" />
 
@@ -88,20 +93,26 @@
 
     <!-- Adding URL Scheme Intents -->
     <config-file target="AndroidManifest.xml" parent="/manifest/application/activity">
-        <intent-filter>
+        <intent-filter android:autoVerify="true">
             <action android:name="android.intent.action.VIEW" />
             <category android:name="android.intent.category.DEFAULT" />
             <category android:name="android.intent.category.BROWSABLE" />
-            <data android:host="www.peerlyst.com" android:scheme="http"/>
-            <data android:host="www.peerlyst.com" android:scheme="https"/>
+            <data android:host="$APP_DOMAIN_1" android:scheme="http"/>
+            <data android:host="$APP_DOMAIN_1" android:scheme="https"/>
         </intent-filter>
-        <intent-filter android:autoVerify="true">
+        <intent-filter>
             <action android:name="android.intent.action.VIEW"/>
             <category android:name="android.intent.category.DEFAULT"/>
             <category android:name="android.intent.category.BROWSABLE"/>
-            <data android:host="peerlyst.com" android:scheme="http"/>
-            <data android:host="peerlyst.com" android:scheme="https"/>
+            <data android:host="$APP_DOMAIN_2" android:scheme="http"/>
+            <data android:host="$APP_DOMAIN_2" android:scheme="https"/>
         </intent-filter>
+        <intent-filter>
+          <data android:scheme="$URL_SCHEME"/>
+          <action android:name="android.intent.action.VIEW" />
+          <category android:name="android.intent.category.DEFAULT" />
+          <category android:name="android.intent.category.BROWSABLE" />
+      </intent-filter>
     </config-file>
 
 <!-- Java Library Sources -->

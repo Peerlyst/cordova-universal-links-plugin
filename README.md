@@ -1,5 +1,10 @@
 # THIS IS A FORKED REPO
+### Modifications
 - Added URL SCHEME Intents to plugin.xml, so that it appends to the Android's Manifest file
+- You can pass Domains and URL Scheme as parameter while installation
+  - APP_DOMAIN_1=www.peerlyst.com
+  - APP_DOMAIN_2=peerlyst.com
+  - URL_SCHEME=peerlyst
 - Unmaintained cordova plugin with unmerged pull request
 https://github.com/nordnet/cordova-universal-links-plugin/pull/135
 
